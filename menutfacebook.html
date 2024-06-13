@@ -21,15 +21,17 @@
         }
 
         .logo {
+            width: 60px;
+            height: 100%;
             display: flex;
         }
 
-        .logo, img {
+        .logo > img {
             width: 60px;
             height: 100%;
         }
 
-        input {
+        .logo > input {
             width: 250px;
             height: 80%;
             margin-top: 5px;
@@ -39,10 +41,12 @@
         }
 
         .nav {
-            width: 60%;
+            width: 40%;
             height: 100%;
             display: flex;
             justify-content: center;
+            padding-left: 200px;
+            padding-right: 5px;
         }
 
         .nav1 {
@@ -68,18 +72,60 @@
         .avt {
             height: 100%;
             display: flex;
+            padding-right: 20px;
         }
 
         .avt1 > img {
             margin: 7px;
             width: 40px;
             height: 40px;
+            transition: 0.4s;
             border-radius: 50%;
             background: rgba(219, 219, 231, 0.88);
         }
 
         .avt1:hover > img {
             background: #c1c1cc;
+        }
+
+        .stories {
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .item {
+            width: 180px;
+            height: 250px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .back {
+            width: 180px;
+        }
+
+        .back img {
+            width: 100%;
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        .avtst {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 3px solid blue;
+        }
+
+        .avtst img {
+            width: 100%;
         }
 
     </style>
@@ -117,8 +163,53 @@
         <div class="avt1">
             <img src="https://icons.iconarchive.com/icons/pictogrammers/material/72/bell-icon.png" alt="">
         </div>
-        <img style="border-radius: 50px"
-             src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/414008793_3620962761564113_4088721283671314050_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=U4kkCBj3hJsQ7kNvgFuGktE&_nc_ht=scontent.fhan18-1.fna&oh=00_AYDBIBUb1K-fPdtfeZZjpEOgJBvt6Jfl91AlDcWow6EnMQ&oe=666BA81E">
+        <div class="avt1">
+            <img style="border-radius: 50%"
+                 src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/414008793_3620962761564113_4088721283671314050_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=U4kkCBj3hJsQ7kNvgFuGktE&_nc_ht=scontent.fhan18-1.fna&oh=00_AYDBIBUb1K-fPdtfeZZjpEOgJBvt6Jfl91AlDcWow6EnMQ&oe=666BA81E">
+        </div>
+
+    </div>
+</div>
+<div class="stories">
+    <div class="item">
+        <div class="back">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/387157762_3573821532944903_183824592720200339_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9TEfQFRdweAQ7kNvgF3Ad9G&_nc_ht=scontent.fhan18-1.fna&oh=00_AYDo1S9S2jb-A52jXMJAR6D5YN1yMM8K3RBBE6pKWFlmuw&oe=666ECC3C"
+                 alt="">
+        </div>
+        <div class="avtst">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/414008793_3620962761564113_4088721283671314050_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MsxG8w_wO9EQ7kNvgEygyXZ&_nc_ht=scontent.fhan18-1.fna&oh=00_AYBRciuQNjq7WEuFxCOVv6cxbKEUM7pheMYzwv1F8sl6Dg&oe=666EBB9E"
+                 alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="back">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/401608326_329349069725376_6418870476676712130_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7VEYmBzPlW8Q7kNvgFXH2au&_nc_ht=scontent.fhan18-1.fna&oh=00_AYB_19zkmZEJSU9HZR58MkuxdiNwM9XMUEmxqW8Z5b8e2w&oe=666EC9C5"
+                 alt="">
+        </div>
+        <div class="avtst">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/414008793_3620962761564113_4088721283671314050_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MsxG8w_wO9EQ7kNvgEygyXZ&_nc_ht=scontent.fhan18-1.fna&oh=00_AYBRciuQNjq7WEuFxCOVv6cxbKEUM7pheMYzwv1F8sl6Dg&oe=666EBB9E"
+                 alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="back">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/432767456_402128999114049_2101899029152722870_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=K3v-6hhWhvgQ7kNvgEHiuk9&_nc_ht=scontent.fhan18-1.fna&oh=00_AYCzHs-smjLZyTuP_L7hfP-5erdu_8Alt63kaZJVV0Nmdg&oe=666ECCE2"
+                 alt="">
+        </div>
+        <div class="avtst">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/414008793_3620962761564113_4088721283671314050_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MsxG8w_wO9EQ7kNvgEygyXZ&_nc_ht=scontent.fhan18-1.fna&oh=00_AYBRciuQNjq7WEuFxCOVv6cxbKEUM7pheMYzwv1F8sl6Dg&oe=666EBB9E"
+                 alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="back">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/440941955_426516843341931_2808697987967662143_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iLHJQtZzRkAQ7kNvgEkrLgj&_nc_ht=scontent.fhan18-1.fna&oh=00_AYDqn-z7ZP6iSxfOYeBPeKbQT-qMtm9TxOcbc58Rbo_xww&oe=666ED8E6"
+                 alt="">
+        </div>
+        <div class="avtst">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/414008793_3620962761564113_4088721283671314050_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MsxG8w_wO9EQ7kNvgEygyXZ&_nc_ht=scontent.fhan18-1.fna&oh=00_AYBRciuQNjq7WEuFxCOVv6cxbKEUM7pheMYzwv1F8sl6Dg&oe=666EBB9E"
+                 alt="">
+        </div>
     </div>
 </div>
 </body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .mainitem {
+            width: calc(25% - 10px);
+            height: 300px;
+        }
+
+        .mainitem:hover {
+            border: 1px solid;
+        }
+
+        .mainitem img {
+            width: 100%;
+            height: 300px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .mainitem {
+                width: calc(100% / 2 - 7px);
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .mainitem {
+                width: calc(100% - 2px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="">
+    </div>
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" alt="">
+    </div>
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" alt="">
+    </div>
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
