@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background: #f2f2f2;
+            border: 2px black solid;
+        }
+
+        .logoNavigation {
+            margin: 20px 40px 10px;
+            width: calc(100% - 80px);
+            height: 50px;
+            display: flex;
+            box-sizing: border-box;
+            background: #c0c0c0;
+        }
+
+        .Logo {
+            width: 30%;
+            height: 100%;
+            padding: 15px 50px;
+
+        }
+
+        .Navigation {
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            padding: 15px 50px;
+
+        }
+
+        .header {
+            width: calc(100% - 80px);
+            height: 150px;
+            text-align: center;
+            margin: 15px 40px 10px;
+            box-sizing: border-box;
+            padding-top: 60px;
+            background: #c0c0c0;
+        }
+
+        .intro {
+            width: calc(100% - 80px);
+            height: 100px;
+            margin: 20px 40px 10px;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 35px;
+            background: #c0c0c0;
+        }
+
+        .content {
+            width: calc(100% - 80px);
+            height: 540px;
+            display: flex;
+            box-sizing: border-box;
+            gap: 30px;
+            margin: 20px 40px 10px;
+        }
+
+        .box {
+            width: calc(33%);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 250px;
+            background: #c0c0c0;
+
+        }
+
+        .footer {
+            width: calc(100% - 80px);
+            margin: 20px 40px 10px;
+            height: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 5px;
+            background: #c0c0c0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logoNavigation">
+        <div class="Logo">Logo</div>
+        <div class="Navigation">Navigation</div>
+    </div>
+    <div class="header">Header/Banner</div>
+    <div class="intro">Intro TextArea</div>
+    <div class="content">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
+</body>
+</html>

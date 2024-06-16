@@ -42,9 +42,16 @@
                 width: calc(100% - 2px);
             }
         }
+        .description{
+            padding-top: 10px;
+        }
     </style>
 </head>
 <body>
+<div class="header">
+    <h2>Responsive Image Gallery</h2>
+    <h4>Resize the browser window to see the effect.</h4>
+</div>
 <div class="main">
     <div class="mainitem">
         <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="">
@@ -62,6 +69,10 @@
         <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="">
         <p>Add a description of the image here</p>
     </div>
+    <div class="description">
+        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
+    </div>
 </div>
+
 </body>
 </html>
